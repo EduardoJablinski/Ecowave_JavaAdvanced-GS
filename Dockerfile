@@ -21,7 +21,7 @@ RUN chown -R appuser:appuser ${APP_HOME}
 USER appuser
 
 # Exponha a porta que o Spring Boot vai usar
-EXPOSE 8080
+EXPOSE 8081
 
 # Defina o comando de inicialização para rodar o app em background
 ENTRYPOINT ["java","-jar","/app/ecowave.jar"]
